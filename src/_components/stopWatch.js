@@ -1,39 +1,3 @@
-/*import React, { Component } from 'react';
-
-class StopWatch extends Component {
-
-    state = {
-        count: 0
-    }
-
-    constructor(props) {
-        super(props);
-        this.interval = setInterval(() => {
-            this.setState({ count: ++this.state.count })
-        }, 1000)
-    }
-
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
-
-    renderStopWatch() {
-        let {count} = this.state;
-        const hour = Math.floor(count/3600);
-        const min = Math.floor((count%3600)/60);
-        const sec = count % 60;
-        return <div style={style}>
-        <span>{hour.toLocaleString('en',{minimumIntegerDigits:2})}</span>:
-        <span>{min.toLocaleString('en',{minimumIntegerDigits:2})}</span>:
-        <span>{sec.toLocaleString('en',{minimumIntegerDigits:2})}</span>
-        </div>
-    }
-
-    render() {
-        return <>{this.renderStopWatch()}</>
-    }
-}*/
-
 import React from 'react';
 
 function StopWatch({ counter }) {
